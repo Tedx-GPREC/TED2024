@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="Ted.png" type="image/png" style="width: 10%; height: 10%;">
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+    <title>
+     TEDx GPREC
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Dw_Yl9PRJYqe0hWEj");
+   })();
+</script>
+
+<style type="text/css">
+   body {
+      background-color: #000;
+
+    }
+  .container {
+    width: 100%; /* Adjust the width as needed */
+
+    margin: auto; /* Center the container horizontally */
+    border-radius: 20px; /* Add rounded border */
+    overflow: hidden; /* Hide overflow content outside of the rounded shape */
+  }
+
+    .card {
+  background-color: #000;
+  border: 2px solid black;
+  width: 90%; /* Decrease the width */
+  margin: auto;
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.photo-card {
+  border-radius: 50%;
+  width: 150px; /* Decrease the width */
+  height: 150px; /* Decrease the height */
+  overflow: hidden;
+  margin: 10px auto; /* Adjust the margin */
+  position: relative;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px; /* Add margin at the top */
+}
+
+.team-title {
+  text-align: center;
+  color: red;
+  font-size: 30px; /* Decrease the font size */
+  margin-bottom: 20px;
+}
+
+
+
+    
+  
+ 
+    .image-wrapper{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .aboutimg{
+      background-image: url('Ted.png');
+      background-repeat: no-repeat;
+      background-blend-mode: lighten;
+    }
+    .Navbar1{
+      position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    }
+
+    .center{
+        padding-top: 0%;
+       text-align: center;
+        margin-right: auto;
+    }
+
+
+</style>
+<body  style="background-color: black;">
+    <nav class="navbar navbar-expand-lg Nav Navbar1"  style="background-color: rgb(0, 0, 0); padding-bottom: 0px; padding-top:0px;  width: 100%; height: 12%;" >
+        <img src="white.png" style="width: 220px; height: 90px; padding-left: 5px;" class="tedxgprec">
+     <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-left" id="collapsibleNavbar">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"  style="color:rgb(255, 255, 255);font-family: revert-layer;">Home</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="about.html"  style=" color:rgb(255, 255, 255); font-family: revert-layer;">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="theme.html"   style=" color:rgb(255, 255, 255); font-family: revert-layer;">Theme</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="speakers.html"style=" color:rgb(255, 255, 255); font-family: revert-layer;" >Speakers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="sponsers.html"  style="color:rgb(255, 252, 252); font-family:revert-layer;">Sponsors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="performers.html" style=" color:rgb(255, 255, 255); font-family: revert-layer;" >Performers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="team.html"  style="color:rgb(255, 255, 255);font-family: revert-layer;">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html" style=" color:rgb(255, 255, 255); font-family: revert-layer;" >Contact</a>    
+        </li>
+        <li style ="display : inline-block;">
+            <div class="register">
+              <a href="https://forms.gle/BZAXoh3o71twRdvr6">REGISTER NOW</a>
+            </div>
+        </li>
+        
+    </ul>
+ </div>
+</nav>
+<div class="center">
+    <h1 style="color: red; font-size: 300%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 3%;">Team - 2K24</h1>
+  </div>
+
+  
+  <div data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div data-aos="fade-up">
+            <div class="card-body">
+              <h2 class="team-title">Organizers</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="photos2024/Organisers/WhatsApp Image 2024-04-21 at 12.04.18_4ad74e73.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5> M Gandhi Prakash</h5>
+                    <h5 style="font-style: italic; color: red;">Organiser</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto rotate">
+                    <img src="photos2024/Organisers/chethana.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5> T Chethana Choudary</h5>
+                    <h5 style="font-style: italic; color: red;">Co-Organiser</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto rotate">
+                    <img src="photos2024/Organisers/Aditya .JPG" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5> G Lalith Aditya</h5>
+                    <h5 style="font-style: italic; color: red;">Executive Director</h5>
+                  </div>
+                </div>
+          </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div data-aos="fade-up">
+          <div class="card-body">
+            <h2 class="team-title">Design Team</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Designers/Copy of SAVE_20240406_243129.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>K S Gokul</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="photo-card mx-auto rotate">
+                  <img src="photos2024/Designers/IMG20220821181406 (1).jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Jagadeesh Nallabothula</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Designers/Insta.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Buchupalli Pujitha</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          
+          <div class="card-body">
+            <h2 class="team-title">Editorial and Documentation Team</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="photo-card mx-auto rotate">
+                  <img src="photos2024/Editorial/Website and insta.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Reethika Sreeja</h5>
+                  <h5 style="font-style: italic; color: red;" >Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Editorial/IMG-20240417-WA0064.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>M Vaishnavi</h5>
+                  <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Editorial/Deepika Shalini.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>M Deepika Shalini</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Editorial/1000071228 (1).jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Meka Bhavya Sree</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+ 
+
+
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="team-title">Finance and Sponsorship Team</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Sponsorship/IMG_0720.PNG" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>G Sai Harshith</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Sponsorship/IMG_3740-min-min.JPG" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Jaswanth</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="team-title">Logistics Team</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Logistics/ROHITH INSTAGRAM AND WEBSITE .jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>K Rohith Reddy</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Logistics/Insta and Website.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>C Sainadha Reddy</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Logistics/Rajavardhan reddy insta and website .jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Rajavardhan Reddy</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto rotate">
+                  <img src="photos2024/Logistics/Deepak.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Deepak</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="team-title">Public Relations Team</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="photo-card mx-auto rotate">
+                    <img src="photos2024/PublicRelations/Sumana Sree.jpeg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>M Sumana Sree </h5>
+                    <h5 style="font-style: italic; color: red;">Director</h5>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="photo-card mx-auto">
+                    <img src="photos2024/PublicRelations/1000040765 (1).jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>G R S Spandana</h5>
+                    <h5 style="font-style: italic; color: red;">Member</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="photos2024/PublicRelations/id.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>R Yashika Reddy</h5>
+                    <h5 style="font-style: italic; color: red;">Member</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="photos2024/PublicRelations/For Insta and ID.png" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>G S R Nihitha</h5>
+                    <h5 style="font-style: italic; color: red;">Member</h5>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto rotate">
+                    <img src="photos2024/PublicRelations/insta3.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>L Akshitha</h5>
+                    <h5 style="font-style: italic; color: red;">Member</h5>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="team-title">Publicity and Marketing Team</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="photo-card mx-auto rotate">
+                      <img src="photos2024/PandmTeam/Supraja.jpg" alt="Photo">
+                    </div>
+                    <div class="card-text">
+                      <h5>A Supraja</h5>
+                      <h5 style="font-style: italic; color: red;">Director</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="photo-card mx-auto">
+                      <img src="photos2024/PandmTeam/IMG_20240103_131709.jpg" alt="Photo">
+                    </div>
+                    <div class="card-text">
+                      <h5>M Gayatri</h5>
+                      <h5 style="font-style: italic; color: red;">Member</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="photo-card mx-auto">
+                      <img src="photos2024/PandmTeam/INSTA.jpg" alt="Photo">
+                    </div>
+                    <div class="card-text">
+                      <h5>Mythreyi Mahanandigari</h5>
+                      <h5 style="font-style: italic; color: red;">Member</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="photo-card mx-auto">
+                      <img src="photos2024/PandmTeam/IMG_20221204_124923_937.jpg" alt="Photo">
+                    </div>
+                    <div class="card-text">
+                      <h5>Katika Sailu</h5>
+                      <h5 style="font-style: italic; color: red;">Member</h5>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4">
+                    <div class="photo-card mx-auto rotate">
+                      <img src="photos2024/PandmTeam/insta n id.jpg" alt="Photo">
+                    </div>
+                    <div class="card-text">
+                      <h5>M s Faiza Anjum</h5>
+                      <h5 style="font-style: italic; color: red;">Member</h5>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="team-title">Speakers and Guest Care Team</h2>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="photo-card mx-auto rotate">
+                        <img src="photos2024/SpeakersandGuest/Medam Neha_.jpg" alt="Photo">
+                      </div>
+                      <div class="card-text">
+                        <h5>M Neha</h5>
+                        <h5 style="font-style: italic; color: red;">Director</h5>
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-4">
+                      <div class="photo-card mx-auto">
+                        <img src="photos2024/SpeakersandGuest/IMG_20240405_113311.jpg" alt="Photo">
+
+                      </div>
+                      <div class="card-text">
+                        <h5>Narla Haritha</h5>
+                        <h5 style="font-style: italic; color: red;">Member</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="photo-card mx-auto">
+                        <img src="photos2024/SpeakersandGuest/Insta & Website.jpg" alt="Photo">
+                      </div>
+                      <div class="card-text">
+                        <h5>Bhuma Monika</h5>
+                        <h5 style="font-style: italic; color: red;">Member</h5>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h2 class="team-title">Technical Team</h2>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="photos2024/TechnicalTeam/Website.jpg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>M Sanjay Raj</h5>
+                          <h5 style="font-style: italic; color: red;">Director</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="photos2024/TechnicalTeam/WhatsApp Image 2024-04-22 at 19.55.47_715fa316.jpg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>Y Hari Priya</h5>
+                          <h5 style="font-style: italic; color: red;">Member</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="photos2024/TechnicalTeam/ab6d058f-bbae-47a3-9d26-14431ced9f8a.png" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>Qazi Mosa</h5>
+                          <h5 style="font-style: italic; color: red;">Member</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="photos2024/TechnicalTeam/Avinash.jpg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>Avinash Golla</h5>
+                          <h5 style="font-style: italic; color: red;">Member</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="center">
+            <h1 style="color: red; font-size: 300%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 3%;">Team - 2K23</h1>
+          </div>
+        
+        
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div data-aos="fade-up">
+            <div class="card-body">
+              <h2 class="team-title">Organizers</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="Photos2023/Organisers/sasira.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>  Bandaru Sasira</h5>
+                    <h5 style="font-style: italic; color: red;">Organiser</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto rotate">
+                    <img src="Photos2023/Organisers/mani aryani.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5> Pathapadu Mani Aryani </h5>
+                    <h5 style="font-style: italic; color: red;">Co-Organiser</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="Photos2023/Organisers/sowgandhi.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>G. Naga Sowgandhi</h5>
+                    <h5 style="font-style: italic; color: red;">Executive Director</h5>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div data-aos="fade-up">
+          <div class="card-body">
+            <h2 class="team-title">Design Team</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Desiginers/Prajwala.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Madri Prajwala</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto rotate">
+                  <img src="Photos2023/Desiginers/Uday chandra  (1).jpeg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Kuruva Uday Chandra</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Desiginers/SAMI.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>MD. Sami Rahaman</h5>
+                  <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                </div>
+              </div>
+             
+              <div class="col-md-3">
+                <div class="photo-card mx-auto rotate">
+                  <img src="Photos2023/Desiginers/IMG_4773.PNG" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Shaik Mohammad Adil</h5>
+                  <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          
+          <div class="card-body">
+            <h2 class="team-title">Editorial Team</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Editorial/saranya.jpeg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Somala Poornima Saranya</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Editorial/WhatsApp Image 2024-04-21 at 13.01.02_f8a4450c.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Chukka Hema</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Editorial/Sai Vaishnavi_.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Menta Sai Vaishnavi</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="photo-card mx-auto rotate">
+                  <img src="Photos2023/Editorial/SUPRAJA.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Asthanaditta Supraja</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="team-title">Finance and Sponsorship Team</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Sponsorship/Harsha.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>C V Harshavardhan</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="photo-card mx-auto">
+                  <img src="photos2024/Organisers/Aditya .JPG" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>G Lalith Aditya</h5>
+                  <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="photo-card mx-auto rotate">
+                  <img src="Photos2023/Sponsorship/Abinavya.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5> Abinavya Mudimela</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="team-title">Logistics Team</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Logistics/MIDDE GANDHI PRAKASH_.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Midde Gandhi Prakash</h5>
+                  <h5 style="font-style: italic; color: red;">Director</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="photo-card mx-auto">
+                  <img src="Photos2023/Logistics/Bhushanam.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>S.Janananda Bhushanam</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="photo-card mx-auto rotate">
+                  <img src="Photos2023/Logistics/Niharika.jpg" alt="Photo">
+                </div>
+                <div class="card-text">
+                  <h5>Katakam Niharika</h5>
+                  <h5 style="font-style: italic; color: red;">Member</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="team-title">Public Relations Team</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="Photos2023/publicRelations/jahnavi_.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>D. Jahnavi</h5>
+                    <h5 style="font-style: italic; color: red;">Director</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto">
+                    <img src="Photos2023/publicRelations/Shreya.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>Shreya</h5>
+                    <h5 style="font-style: italic; color: red;">Director</h5>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="photo-card mx-auto rotate">
+                    <img src="Photos2023/publicRelations/IMG_20230328_090801.jpg" alt="Photo">
+                  </div>
+                  <div class="card-text">
+                    <h5>Shaik mohammed khateeb </h5>
+                    <h5 style="font-style: italic; color: red;">Member</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="team-title">Speakers and Guest Team</h2>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="photo-card mx-auto">
+                        <img src="Photos2023/SpeakersandGuestCare/Amog.kota.JPEG" alt="Photo">
+                      </div>
+                      <div class="card-text">
+                        <h5>Kota Amog</h5>
+                        <h5 style="font-style: italic; color: red;">Director</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="photo-card mx-auto">
+                        <img src="Photos2023/SpeakersandGuestCare/S.Sai Bhavana.jpg" alt="Photo">
+                      </div>
+                      <div class="card-text">
+                        <h5>Sudhireddy Sai Bhavana</h5>
+                        <h5 style="font-style: italic; color: red;">Director</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="photo-card mx-auto rotate">
+                        <img src="Photos2023/SpeakersandGuestCare/Chaitra.jpg" alt="Photo">
+                      </div>
+                      <div class="card-text">
+                        <h5>Chaitra Gangireddy</h5>
+                        <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="photo-card mx-auto rotate">
+                        <img src="Photos2023/SpeakersandGuestCare/Lakshmi Sarojini.jpg" alt="Photo">
+                      </div>
+                      <div class="card-text">
+                        <h5>K. Lakshmi Sarojini</h5>
+                        <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h2 class="team-title">Technical Team</h2>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="Photos2023/TechnicalTeam/Nomika.jpeg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>Gajula Nomika</h5>
+                          <h5 style="font-style: italic; color: red;">Director</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="Photos2023/TechnicalTeam/Subash goud.jpg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>Ediga Subash Goud</h5>
+                          <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto">
+                          <img src="Photos2023/TechnicalTeam/Chethana.jpg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>T Chethana Choudary</h5>
+                          <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="photo-card mx-auto rotate">
+                          <img src="Photos2023/TechnicalTeam/Medam Neha_.jpg" alt="Photo">
+                        </div>
+                        <div class="card-text">
+                          <h5>Medam Neha</h5>
+                          <h5 style="font-style: italic; color: red;">Co-Director</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+
+
+
+
+</script>

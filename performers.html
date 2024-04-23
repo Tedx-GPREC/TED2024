@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="Ted.png" type="image/png" style="width: 10%; height: 10%;">
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+    <title>
+     TEDx GPREC
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Dw_Yl9PRJYqe0hWEj");
+   })();
+</script>
+
+<style type="text/css">
+    .container {
+    border: 2px solid red; /* Adjust the border color and width as needed */
+    padding: 20px; /* Add padding to create space between the border and the content */
+    border-radius: 10px; /* Optionally, add border-radius for rounded corners */
+}
+
+    .card{
+        background-color: white;
+    }
+    .card-text1{
+        color:white;
+        
+        padding: 10px;
+    }
+    .card-title {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Set the text color */
+    text-align: center; /* Center align the text */
+    margin-top: 10px; /* Add top margin for spacing */
+}
+
+    .image-wrapper{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .aboutimg{
+      background-image: url('Ted.png');
+      background-repeat: no-repeat;
+      background-blend-mode: lighten;
+    }
+    .Navbar1{
+      position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    }
+
+    .performer-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 240px; /* Adjust the width here */
+    transition: transform 0.3s ease;
+}
+
+        .performer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .performer-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .performer-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 5px; /* Add margin to separate from the image */
+    text-align: center;
+    max-width: 100%; /* Ensure text doesn't exceed the width of the card */
+}
+
+.specialty {
+    font-style: italic;
+    color: red;
+    text-align: center;
+    max-width: 100%; /* Ensure text doesn't exceed the width of the card */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .performer-card {
+            animation: fadeIn 0.5s ease;
+        }
+    .center{
+        padding-top: 0%;
+       text-align: center;
+        margin-right: auto;
+    }
+</style>
+<body  style="background-color: black;">
+    <nav class="navbar navbar-expand-lg Nav Navbar1"  style="background-color: rgb(0, 0, 0); padding-bottom: 0px; padding-top:0px;  width: 100%; height: 12%;" >
+        <img src="white.png" style="width: 220px; height: 90px; padding-left: 5px;" class="tedxgprec">
+     <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-left" id="collapsibleNavbar">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"  style="color:rgb(255, 255, 255);font-family: revert-layer;">Home</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="about.html"  style=" color:rgb(255, 255, 255); font-family: revert-layer;">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="theme.html"   style=" color:rgb(255, 255, 255); font-family: revert-layer;">Theme</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="speakers.html"style=" color:rgb(255, 255, 255); font-family: revert-layer;" >Speakers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="sponsers.html"  style="color:rgb(255, 252, 252); font-family:revert-layer;">Sponsors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="performers.html" style=" color:rgb(255, 255, 255); font-family: revert-layer;" >Performers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="team.html"  style="color:rgb(255, 255, 255);font-family: revert-layer;">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html" style=" color:rgb(255, 255, 255); font-family: revert-layer;" >Contact</a>    
+        </li>
+        <li style ="display : inline-block;">
+            <div class="register">
+                <a href="https://forms.gle/BZAXoh3o71twRdvr6">REGISTER NOW</a>
+            </div>
+        </li>
+        
+    </ul>
+ </div>
+</nav>
+<div class="center">
+    <h1 style="color: red; font-size: 300%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 3%;">Performers-2K24 Coming Soon</h1>
+  </div>
+<div class="center">
+    <h1 style="color: red; font-size: 300%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 3%;">Performers-2K23</h1>
+  </div>
+  <div class="container" data-aos="fade-down" data-aos-duration="3000">
+    <div class="row justify-content-center">
+        <div class="card-title" >Dancers</div>
+<div class="col-md-3">
+    <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+        <div class="performer-img">
+            <img src="Performers2023/Dancers/_DSC0313.JPG" alt="Performer 1" style="transform: rotate(-90deg);">
+        </div>
+        <div class="performer-info">
+            <div class="performer-name">Jaya Sree</div>
+            <div class="specialty">Dancer</div>
+        </div>
+    </div>
+</div>
+
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0355.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0373.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Prathyusha</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0600.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Yeshwanth</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+        </div>
+        </div>
+<br>
+        <div class="container" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row justify-content-center">
+            <div class="card-title">Dancers</div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0601.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Jatin</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0641.JPG" alt="Performer 2">
+                <div class="performer-name">Mrudula</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0642.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Dancers/_DSC0643.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Sannihita</div>
+                <div class="specialty">Dancer</div>
+            </div>
+        </div>
+    </div>       
+    </div>
+    <br>
+    <div class="container" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row justify-content-center">
+            <div class="card-title">Singers</div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Singers/_DSC0467.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Thanu Sree</div>
+                <div class="specialty">Singer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Singers/_DSC0711.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Gandhi Prakash</div>
+                <div class="specialty">Singer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Singers/_DSC0477.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Lohitha</div>
+                <div class="specialty">Singer</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Singers/_DSC0487.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Srinidhi</div>
+                <div class="specialty">Singer</div>
+            </div>
+        </div>
+
+    </div>       
+    </div>
+    <br>
+    <div class="container" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row justify-content-center">
+            <div class="card-title">Instrumentalists</div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Instrumentalists/_DSC0493.JPG" alt="Performer 2" >
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty">Instrumental musician</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Instrumentalists/_DSC0497.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty">Guitarist</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Instrumentalists/_DSC0677.JPG" alt="Performer 2" >
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty">Instrumental musician</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Instrumentalists/_DSC0680.JPG" alt="Performer 2" >
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty"> Pianist </div>
+            </div>
+        </div>
+
+    </div>       
+    </div>
+    <br>
+    <div class="container" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row justify-content-center">
+            <div class="card-title">Hosts</div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Hosts/_DSC0300.JPG" alt="Performer 2" >
+                <div class="performer-name">Jane Smith</div>
+                <div class="specialty">Instrumental musician</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Hosts/_DSC0312.JPG" alt="Performer 2" style="transform: rotate(-90deg);">
+                <div class="performer-name">Himaja</div>
+                <div class="specialty">Host</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Hosts/_DSC0438.JPG" alt="Performer 2" style="transform: rotate(-90deg);" >
+                <div class="performer-name">Venkata Kiriti</div>
+                <div class="specialty">Host</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="performer-card" data-aos="fade-down" data-aos-duration="3000">
+                <img src="Performers2023/Hosts/_DSC0576.JPG" alt="Performer 2" style="transform: rotate(-90deg);" >
+                <div class="performer-name">Aswia Simeen</div>
+                <div class="specialty"> Host </div>
+            </div>
+        </div>
+
+    </div>       
+    </div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
