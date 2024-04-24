@@ -162,6 +162,26 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+        function sendMail()
+{
+  var params={
+    email:document.getElementById("email").value,
+    message:document.getElementById("message").value
+  };
+
+const serviceid="service_7cuzav9";
+const templetid="template_13p8skq";
+emailjs.send(serviceid,templetid,params)
+.then(
+  res=>{
+    document.getElementById("email").value="";
+    document.getElementById("message").value="";
+    console.log(res);
+    alert("Your message sent successfully");
+
+  }
+)
+.catch((err)=>console.log(err));}
       AOS.init();
     </script>
 </body>
